@@ -1,0 +1,6 @@
+Flask==3.0.3
+gunicorn==22.0.0
+google-cloud-storage==1.42.3
+Werkzeug==3.0.3
+tensorflow==2.15.0
+opencv-python-headless>=4.5.4.60
