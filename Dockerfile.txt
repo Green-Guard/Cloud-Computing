@@ -1,0 +1,16 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY uploader.py /app/
+COPY requirements.txt /app/
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 8080
+
+ENV PORT 8080
+
+ENV BUCKET_NAME greenguard1
+
+CMD ["python", "uploader.py"]
